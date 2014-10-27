@@ -17,6 +17,11 @@ body {
   /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+h2 {
+    color: #264461;
+    font-size: 24px;
+    margin-top: 10px;
+}
 .img-portfolio {
     margin-bottom: 30px;
 }
@@ -100,4 +105,10 @@ footer {
 
 .bg-white {
     background-color: #fff;
+}
+
+.intro-box {
+    background-color: #e5eef2;
+    width: 75%;
+    padding: 5px 15px;
 }
