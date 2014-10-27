@@ -109,6 +109,12 @@ footer {
 
 .intro-box {
     background-color: #e5eef2;
-    width: 75%;
+   
+    padding: 5px 15px;
+   
+}
+.right-panel {
+    background-color: #e5eef2;
+    height: 412px;
     padding: 5px 15px;
 }
