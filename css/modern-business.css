@@ -108,13 +108,50 @@ footer {
 }
 
 .intro-box {
+    
     background-color: #e5eef2;
-   
+    color:#333;
     padding: 5px 15px;
+    width:734px;
+    margin-bottom: 15px;
+    height:155px;
    
 }
 .right-panel {
     background-color: #e5eef2;
-    height: 412px;
-    padding: 5px 15px;
+    height: 450px;
+    padding: 16px 15px 20px 15px;
+    float:right;
+    width:auto;
+    width:228px;
+    margin:0;
+}
+
+.container {
+    width: 1002px;
+}
+
+.contentStage{
+    
+    float: right;
+    width:734px;
+    margin:0;
+    margin-right:10px;
+    margin-bottom: 20px;
+}
+
+.intro-img {
+    height:279px;
+    position:relative;
+}
+
+.intro-img-txt {
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    padding:10px;
+    background: #819eb1 none;
+    color:#fff!important;
+    width:240px;
 }
