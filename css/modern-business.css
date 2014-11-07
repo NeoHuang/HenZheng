@@ -123,12 +123,14 @@ footer {
     padding: 16px 15px 20px 15px;
     float:right;
     width:auto;
-    width:228px;
+    width:238px;
     margin:0;
 }
 
 .container {
-    width: 1002px;
+    width: 1036px;
+    padding-left:27px;
+    padding-right:27px;
 }
 
 .contentStage{
@@ -153,5 +155,23 @@ footer {
     padding:10px;
     background: #819eb1 none;
     color:#fff!important;
-    width:240px;
+    width:238px;
+}
+
+.col3 {
+    float:left;
+    margin-right:10px;
+}
+
+.prod-disc {
+    width:238px;
+    padding:5px;
+    font-size: 12px;
+}
+
+.demo {
+    clear:both;
+    margin-bottom:20px;
+    position:relative;
+    overflow:auto;
 }
