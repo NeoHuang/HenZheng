@@ -10,6 +10,7 @@ html,
 body {
     height: 100%;
     background-color: #1F3044;
+    font-family: arial, sans-serif, Microsoft YaHei;
 
 }
 
@@ -163,6 +164,11 @@ footer {
     margin-right:10px;
 }
 
+.col3>img {
+    width: 238px;
+height: 135px;
+}
+
 .prod-disc {
     width:238px;
     padding:5px;
@@ -174,4 +180,12 @@ footer {
     margin-bottom:20px;
     position:relative;
     overflow:auto;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar {
+    min-height: 40px;
 }
