@@ -9,12 +9,20 @@
 html,
 body {
     height: 100%;
+    background-color: #1F3044;
+    font-family: arial, sans-serif, Microsoft YaHei;
+
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+h2 {
+    color: #264461;
+    font-size: 24px;
+    margin-top: 10px;
+}
 .img-portfolio {
     margin-bottom: 30px;
 }
@@ -94,4 +102,94 @@ footer {
 
 .shadow-bottom {
     box-shadow: 0px 1px 1px #AAAAAA;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.intro-box {
+    
+    background-color: #e5eef2;
+    color:#333;
+    padding: 5px 15px;
+    width:734px;
+    margin-bottom: 15px;
+    height:155px;
+   
+}
+.right-panel {
+    background-color: #e5eef2;
+    height: 450px;
+    padding: 16px 15px 20px 15px;
+    float:right;
+    width:auto;
+    width:238px;
+    margin:0;
+}
+
+.container {
+    width: 1036px;
+    padding-left:27px;
+    padding-right:27px;
+}
+
+.contentStage{
+    
+    float: right;
+    width:734px;
+    margin:0;
+    margin-right:10px;
+    margin-bottom: 20px;
+}
+
+.intro-img {
+    height:279px;
+    position:relative;
+}
+
+.intro-img-txt {
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    padding:10px;
+    background: #819eb1 none;
+    color:#fff!important;
+    width:238px;
+}
+
+.col3 {
+    float:left;
+    margin-right:10px;
+}
+
+.col3>img {
+    width: 238px;
+height: 135px;
+}
+
+.prod-disc {
+    width:238px;
+    font-size: 12px;
+}
+
+.demo {
+    clear:both;
+    margin-bottom:20px;
+    position:relative;
+    overflow:auto;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar {
+    min-height: 40px;
+}
+
+h4 {
+    font-family: arial, sans-serif, Microsoft YaHei;
+    margin-bottom: 5px;
 }
