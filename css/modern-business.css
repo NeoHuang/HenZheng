@@ -171,7 +171,6 @@ height: 135px;
 
 .prod-disc {
     width:238px;
-    padding:5px;
     font-size: 12px;
 }
 
@@ -188,4 +187,9 @@ height: 135px;
 
 .navbar {
     min-height: 40px;
+}
+
+h4 {
+    font-family: arial, sans-serif, Microsoft YaHei;
+    margin-bottom: 5px;
 }
