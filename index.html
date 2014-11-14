@@ -11,23 +11,33 @@
 ">
 
 <!--  <link rel="stylesheet" href="/css/main.css">-->
-  <link href="css/magic-bootstrap-min.css" rel="stylesheet">
+  <link href="/css/magic-bootstrap-min.css" rel="stylesheet">
 
         <!-- Custom CSS -->
-  <link href="css/modern-business.css" rel="stylesheet">
+  <link href="/css/modern-business.css" rel="stylesheet">
 
         <!-- Custom Fonts -->
-  <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <!--
   <link rel="canonical" href="http://yourdomain.com/">
   <link rel="alternate" type="application/atom+xml" title="恒正精机科技" href="http://yourdomain.com/feed.xml" />
 -->
+    <style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+     <script src="/js/jquery-1.11.0.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="/js/bootstrap.min.js"></script>
 </head>
 
 
   <body>
       <div class="container bg-white" style="padding-bottom: 20px">
-        <a href="index.html"><img src="image/logo-title.png" height="50px" style="margin-top:10px; margin-bottom:20px"></a>
+        <a href="index.html"><img src="/image/logo-title.png" height="50px" style="margin-top:10px; margin-bottom:20px"></a>
             <nav class="navbar navbar-default  shadow-bottom" role="navigation">
                 <div >
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -39,7 +49,7 @@
                                 <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">关于恒正 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="#">公司介绍</a>
+                                        <a href="#">公司简介</a>
                                     </li>
                                     <li>
                                         <a href="#">企业资质</a>
@@ -56,38 +66,35 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">主要产品 <b class="caret"></b></a>
+                                <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">产品系列 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
 
-                                    <li class="dropdown-header">
-                                        工业机器人与自动化
+                                    <li class="dropdown-header" style="font-size:14px">
+                                        工业机器人
+                                    </li>
+                                    <li style="padding-left:5px">
+                                        <a href="portfolio-2-col.html">机器人选型指南</a>
+                                    </li>
+                                    <li style="padding-left:5px">
+                                        <a href="portfolio-3-col.html">机器人型号索引</a>
                                     </li>
                                     <li>
-                                        <a href="portfolio-2-col.html">自主品牌机器人</a>
+                                        <a href="portfolio-3-col.html">液压设备与系统</a>
                                     </li>
-                                    <li>
-                                        <a href="portfolio-3-col.html">国外品牌机器人</a>
-                                    </li>
-                                    <li>
-                                        <a href="portfolio-4-col.html">选型指南</a>
-                                    </li>
-                                    <li role="presentation" class="divider"></li>
-                                    <li>
-                                        <a href="portfolio-item.html">液压系统与设备</a>
-                                    </li>
+                                    
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="services.html" class="dropdown-toggle" data-toggle="dropdown">服务与方案 <b class="caret"></b></a>
+                                <a href="services.html" class="dropdown-toggle" data-toggle="dropdown">机器人服务站 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a href="portfolio-1-col.html">系统解决方案</a>
                                     </li>
                                     <li>
-                                        <a href="portfolio-2-col.html">工业机器人租赁</a>
+                                        <a href="portfolio-2-col.html">工业机器人培训</a>
                                     </li>
                                     <li>
-                                        <a href="portfolio-3-col.html">工业机器人专业培训</a>
+                                        <a href="portfolio-3-col.html">工业机器人租赁</a>
                                     </li>
                                     <li>
                                         <a href="portfolio-4-col.html">工业机器人维护维修</a>
@@ -95,50 +102,35 @@
                                     <li>
                                         <a href="portfolio-item.html">二手工业机器人销售</a>
                                     </li>
-                                    <li>
-                                        <a href="portfolio-item.html">液压产品与系统销售</a>
-                                    </li>
+                                    
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="portfolio-item.html" class="dropdown-toggle" data-toggle="dropdown">参考案例 <b class="caret"></b></a>
+                                <a href="portfolio-item.html" class="dropdown-toggle" data-toggle="dropdown">工业解决方案 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                                        <a href="portfolio-1-col.html">民爆行业</a>
                                     </li>
                                     <li>
-                                        <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                                        <a href="portfolio-2-col.html">自动化装配</a>
                                     </li>
                                     <li>
-                                        <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                                        <a href="portfolio-3-col.html">拧紧螺钉</a>
                                     </li>
                                     <li>
-                                        <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                                        <a href="portfolio-4-col.html">喷涂系统</a>
                                     </li>
                                     <li>
-                                        <a href="portfolio-item.html">Single Portfolio Item</a>
+                                        <a href="portfolio-item.html">包装分拣码垛</a>
+                                    </li>
+                                     <li>
+                                        <a href="portfolio-item.html">高校实验平台</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
-                                <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">职业发展 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="portfolio-1-col.html">1 Column Portfolio</a>
-                                    </li>
-                                    <li>
-                                        <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                                    </li>
-                                    <li>
-                                        <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                                    </li>
-                                    <li>
-                                        <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                                    </li>
-                                    <li>
-                                        <a href="portfolio-item.html">Single Portfolio Item</a>
-                                    </li>
-                                </ul>
+                            <li >
+                                <a href="about.html" >职业发展</a>
+                        
                             </li>
                             <li >
                                 <a href="contact.html" >联系我们</a>
@@ -214,10 +206,7 @@
 
 
         <!-- jQuery Version 1.11.0 -->
-        <script src="js/jquery-1.11.0.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
+       
 
         <!-- Script to Activate the Carousel -->
         <script>
