@@ -194,3 +194,7 @@ h4 {
     font-family: arial, sans-serif, Microsoft YaHei;
     margin-bottom: 5px;
 }
+
+.small-padding {
+    padding:5px;
+}
