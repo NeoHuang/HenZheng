@@ -198,3 +198,34 @@ h4 {
 .small-padding {
     padding:5px;
 }
+.dropdown-header {
+    color:#000;
+    font-weight: bold;
+}
+.robot-card-container {
+    padding: 5px;
+}
+.robot-card {
+  box-shadow: 2px 2px 3px rgb(238, 238, 238);
+  border: 1px solid rgb(223, 223, 223);
+  height: 150px;
+ 
+  transition: all 0.2s linear 0s;
+  position: relative;
+    padding: 5px;
+}
+
+.robot-img {
+    width: 100px;
+    display: block;
+}
+
+.relative {
+    position:relative;
+}
+.bold {
+    font-weight: bold;
+}
+.float {
+    float:left;
+}
