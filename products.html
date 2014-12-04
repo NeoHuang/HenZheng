@@ -3,31 +3,84 @@ layout: default
 ---
 
 <script src="js/angular.min.js"></script>
+<script src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
 <script src="js/robotData.js"></script>
 <script src="js/searchRobot.js"></script>
 <div ng-app="robotsApp" style="margin-left:10px; margin-right:10px;">
     <div ng-controller="searchRobotCtrl">
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label >品牌</label>
+                <div class="btn-group">
+                    <label class="btn btn-default" ng-model="brand.abb" btn-checkbox>ABB</label>
+                    <label class="btn btn-default" ng-model="brand.anchuan" btn-checkbox>安川</label>
+                    <label class="btn btn-default" ng-model="brand.kuka" btn-checkbox>库卡</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="vsplitter">
+                </div>
+            </div>
+            <div class="form-group">                     
+                <label >荷重 &ge;</label>
+                <input class="form-control smallTxt" ng-model="search.load">
+                <label >kg</label>    
+            </div>
+            <div class="form-group">
+                <div class="vsplitter">
+                </div>
+            </div>
+            <div class="form-group">                     
+                <label >工作范围 &ge;</label>
+                <input class="form-control smallTxt" ng-model="search.reach">
+                <label >m</label>    
+            </div>
+             <div class="form-group">
+                <div class="vsplitter">
+                </div>
+            </div>
+            <div class="form-group">                     
+                <label >重复定位精度 &le;</label>
+                <input class="form-control smallTxt" ng-model="search.precision">
+                <label >mm</label>    
+            </div>
+            
+        </form>
+        <br>
+         <form class="form-inline" role="form">
+            <div class="form-group">
+                <label >应用范围</label>
+                <div class="btn-group">
+                    <label class="btn btn-default" ng-model="brand.abb" btn-checkbox>ABB</label>
+                    <label class="btn btn-default" ng-model="brand.anchuan" btn-checkbox>安川</label>
+                    <label class="btn btn-default" ng-model="brand.kuka" btn-checkbox>库卡</label>
+                </div>
+            </div>
+           
+        </form>
+        <div class="spacer">
+        </div>
         <div class="row">
             <div ng-repeat="robot in robots" class="col-lg-6 col-md-6 col-sm-12 robot-card-container">
                 <div class="robot-card">
                     <div style="float:left; height:130px">
                         <img src="image/robots{(robot.image)}" class="robot-img" >
                     </div>
-                    
+
                     <div class="relative">
                         <div style="float:left; margin-right:20px;"><span class="bold">品牌：</span>{(robot.brand)}</div>
                         <div ><span class="bold">型号：</span> {(robot.model)}</div>
-                        
+
                         <div><span class="bold">荷重：</span>{(robot.load)}kg</div>
                         <div><span class="bold">工作范围：</span>{(robot.reach)}m</div>
                         <div><span class="bold">重复定位精度(RP)：</span>{(robot.precision)}mm</div>
                         <div><span class="bold">主要应用：</span>{(robot.applicationFull)}</div>
                     </div>
-                    
+
                 </div>
-                
+
             </div>
         </div>
-        
+
     </div>
 </div>

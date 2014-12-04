@@ -1,4 +1,4 @@
-var robotsApp = angular.module('robotsApp', []);
+var robotsApp = angular.module('robotsApp', ['ui.bootstrap']);
 robotsApp.config([
   '$interpolateProvider', function($interpolateProvider) {
     return $interpolateProvider.startSymbol('{(').endSymbol(')}');
