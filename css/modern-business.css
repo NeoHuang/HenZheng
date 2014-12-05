@@ -204,13 +204,19 @@ h4 {
 }
 .robot-card-container {
     padding: 5px;
+   -webkit-transition:all linear 0.5s;
+  transition: all linear 0.5s;
+    opacity: 1;
+}
+.robot-card-container.ng-hide {
+    opacity: 0;
 }
 .robot-card {
   box-shadow: 2px 2px 3px rgb(238, 238, 238);
   border: 1px solid rgb(223, 223, 223);
   height: 150px;
- 
-  transition: all 0.2s linear 0s;
+ -webkit-transition:all 0.2s linear 0.5s;
+  transition: all 0.2s linear 0.5s;
   position: relative;
     padding: 5px;
 }
@@ -244,7 +250,7 @@ h4 {
 }
 
 .smallTxt {
-    width:50px !important;
+    width:80px !important;
 }
 
 .spacer {
@@ -256,4 +262,27 @@ h4 {
 
 .vspacer {
     margin-bottom: 10px;
+}
+
+.animate.ng-leave, 
+.animate.ng-enter
+{ 
+  -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  position: relative;
+  display: block;
+} 
+ 
+.animate.ng-enter.animate.ng-enter-active, 
+.animate.ng-leave {
+  opacity: 1;
+}
+ 
+.animate.ng-leave.animate.ng-leave-active,
+.animate.ng-enter {
+  opacity: 0;
+
 }

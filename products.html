@@ -3,6 +3,7 @@ layout: default
 ---
 
 <script src="js/angular.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
 <script src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
 <script src="js/robotData.js"></script>
 <script src="js/searchRobot.js"></script>
@@ -12,7 +13,7 @@ layout: default
             <div class="form-group">
                 <label >品牌</label>
                 <div class="btn-group">
-                    <label class="btn btn-default " ng-repeat="brand in brands" ng-model="brand.selected" btn-checkbox>{(brand.name)}</label>
+                    <label class="btn btn-default " ng-repeat="brand in search.brands" ng-model="brand.selected" btn-checkbox>{(brand.name)}</label>
                 </div>
             </div>
             <div class="form-group">
@@ -49,15 +50,20 @@ layout: default
             <div class="form-group">
                 <label>应用范围</label>
                 <div class="btn-group">
-                    <label class="btn btn-default vspacer" ng-repeat="app in appOptions" ng-model="app.selected" btn-checkbox>{(app.name)}</label>
+                    <label class="btn btn-default vspacer" ng-repeat="app in search.appOptions" ng-model="app.selected" btn-checkbox>{(app.name)}</label>
                 </div>
             </div>
            
         </form>
+<!--
+        <form>
+            <button type="button" class="btn btn-success">搜索</button>
+        </form>
+-->
         <div class="spacer">
         </div>
         <div class="row">
-            <div ng-repeat="robot in robots" class="col-lg-6 col-md-6 col-sm-12 robot-card-container">
+            <div ng-repeat="robot in robots | robotFilter:search" class="animate col-lg-6 col-md-6 col-sm-12 robot-card-container " >
                 <div class="robot-card">
                     <div style="float:left; height:130px">
                         <img src="image/robots{(robot.image)}" class="robot-img" >

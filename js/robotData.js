@@ -273,6 +273,17 @@ var robotsData = [
         install: ["落地", "倒置", "斜置"],
         precision: 0.03
     },
+    {
+        image: '/abb/irb120.jpg',
+        brand: "Kuka",
+        model: "IRB6620",
+        application: ["清洁", "喷淋", "上胶", "密封", "装配", "切割", "去毛刺", "上下料", "物料搬运", "包装", "码垛", "研磨", "抛光", "弯板机上下料", "点焊"],
+        load: 150,
+        reach: 2.2,
+        protection: ["IP54", "IP67", "铸造专家II代"],
+        install: ["落地", "倒置", "斜置"],
+        precision: 0.03
+    },
     
     
 ];
