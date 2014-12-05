@@ -12,9 +12,7 @@ layout: default
             <div class="form-group">
                 <label >品牌</label>
                 <div class="btn-group">
-                    <label class="btn btn-default" ng-model="brand.abb" btn-checkbox>ABB</label>
-                    <label class="btn btn-default" ng-model="brand.anchuan" btn-checkbox>安川</label>
-                    <label class="btn btn-default" ng-model="brand.kuka" btn-checkbox>库卡</label>
+                    <label class="btn btn-default " ng-repeat="brand in brands" ng-model="brand.selected" btn-checkbox>{(brand.name)}</label>
                 </div>
             </div>
             <div class="form-group">
@@ -49,11 +47,9 @@ layout: default
         <br>
          <form class="form-inline" role="form">
             <div class="form-group">
-                <label >应用范围</label>
+                <label>应用范围</label>
                 <div class="btn-group">
-                    <label class="btn btn-default" ng-model="brand.abb" btn-checkbox>ABB</label>
-                    <label class="btn btn-default" ng-model="brand.anchuan" btn-checkbox>安川</label>
-                    <label class="btn btn-default" ng-model="brand.kuka" btn-checkbox>库卡</label>
+                    <label class="btn btn-default vspacer" ng-repeat="app in appOptions" ng-model="app.selected" btn-checkbox>{(app.name)}</label>
                 </div>
             </div>
            

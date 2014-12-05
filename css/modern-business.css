@@ -253,3 +253,7 @@ h4 {
     border-bottom: 1px solid #ddd;
     width: 100%;
 }
+
+.vspacer {
+    margin-bottom: 10px;
+}
