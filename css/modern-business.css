@@ -24,6 +24,10 @@ h2 {
     margin-top: 10px;
     font-weight: bold;
 }
+
+h3 {
+   font-family: "Helvetica Neue Light","Helvetica Neue eText Pro Light",Arial,sans-serif;
+}
 .img-portfolio {
     margin-bottom: 30px;
 }
@@ -263,7 +267,9 @@ h4 {
 .vspacer {
     margin-bottom: 10px;
 }
-
+.vspacer-lg {
+    margin-bottom: 20px;
+}
 .animate.ng-leave, 
 .animate.ng-enter
 { 
@@ -285,4 +291,23 @@ h4 {
 .animate.ng-enter {
   opacity: 0;
 
+}
+
+.small-left-padding {
+    padding-left:10px;
+}
+
+.border-list {
+    list-style-type: none;
+/*    border-left: 3px solid #428bca;*/
+/*    border-bottom: 1px solid #428bca;*/
+/*    padding-left: 10px;*/
+    margin-bottom: 10px;
+}
+.border-list:before {
+		content: "\00BB \0020";
+    color:#428bca;
+	     }
+.bg-light-gray{
+    background-color: #F5F5F5;
 }
