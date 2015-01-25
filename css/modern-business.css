@@ -28,6 +28,10 @@ h2 {
 h3 {
    font-family: "Helvetica Neue Light","Helvetica Neue eText Pro Light",Arial,sans-serif;
 }
+h4 {
+   font-family: "Helvetica Neue Light","Helvetica Neue eText Pro Light",Arial,sans-serif;
+    font-size: 18px;
+}
 .img-portfolio {
     margin-bottom: 30px;
 }
@@ -310,4 +314,8 @@ h4 {
 	     }
 .bg-light-gray{
     background-color: #F5F5F5;
+}
+
+.left-border {
+    border-left: 3px solid #8ea9ff;
 }
