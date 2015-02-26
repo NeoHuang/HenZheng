@@ -681,7 +681,7 @@ var robotsData = [
         model: "IRB360-3/1130",
         application: ["装配", "物料搬运","包装", "拾料"],
         load: 3,
-        reach: 1130,
+        reach: 1.130,
         protection: ["IP54","IP67","IP69K","IPA认证","不锈钢洁净室","可冲洗"],
         precision: 0.06
     },
@@ -692,7 +692,7 @@ var robotsData = [
         model: "IRB360-8/1130",
         application: ["装配", "物料搬运","包装", "拾料"],
         load: 8,
-        reach: 1130,
+        reach: 1.130,
         protection: ["IP54"],
         precision: 0.03
     },
@@ -703,7 +703,7 @@ var robotsData = [
         model: "IRB360-1/1600",
         application: ["装配", "物料搬运","包装", "拾料"],
         load: 1,
-        reach: 1600,
+        reach: 1.600,
         protection: ["IP54","IP67","IP69K","IPA认证","不锈钢洁净室","可冲洗"],
         precision: 0.03
     },
@@ -714,7 +714,7 @@ var robotsData = [
         model: "IRB360-6/1600",
         application: ["装配", "物料搬运","包装", "拾料"],
         load: 6,
-        reach: 1600,
+        reach: 1.600,
         protection: ["IP54"],
         precision: 0.03
     },
