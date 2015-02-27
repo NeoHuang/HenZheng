@@ -1,6 +1,6 @@
 var robotsData = [
     {
-        image: '/abb/irb120.jpg',
+        image: '/abb/IRB120.jpg',
         brand: "ABB",
         model: "IRB120-3/0.6",
         application: ["装配", "上下料", "物料搬运", "包装", "挤胶"],
@@ -12,7 +12,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb140.jpg',
+        image: '/abb/IRB140.jpg',
         brand: "ABB",
         model: "IRB140-6/0.81",
         application: ["弧焊", "装配", "清洁", "喷淋", "去毛刺", "上下料", "物料搬运", "包装"],
@@ -24,7 +24,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb1200.jpg',
+        image: '/abb/IRB1200.jpg',
         brand: "ABB",
         model: "IRB1200-7/0.7",
         application: ["上下料", "物料搬运"],
@@ -35,7 +35,7 @@ var robotsData = [
         precision: 0.02
     },
     {
-        image: '/abb/irb1200.jpg',
+        image: '/abb/IRB1200.jpg',
         brand: "ABB",
         model: "IRB1200-5/0.9",
         application: ["上下料", "物料搬运"],
@@ -46,7 +46,7 @@ var robotsData = [
         precision: 0.025
     },
     {
-        image: '/abb/irb1410.jpg',
+        image: '/abb/IRB1410.jpg',
         brand: "ABB",
         model: "IRB1410-5/1.44",
         application: ["弧焊"],
@@ -58,7 +58,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb1520.jpg',
+        image: '/abb/IRB1520.jpg',
         brand: "ABB",
         model: "IRB1520-4/1.50",
         application: ["弧焊"],
@@ -70,7 +70,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb1600.jpg',
+        image: '/abb/IRB1600.jpg',
         brand: "ABB",
         model: "IRB1600-6/1.2",
         application: ["弧焊","装配","清洁","喷淋","取件","上下料","物料搬运","包装"],
@@ -83,7 +83,7 @@ var robotsData = [
 
 
     {
-        image: '/abb/irb1600.jpg',
+        image: '/abb/IRB1600.jpg',
         brand: "ABB",
         model: "IRB1600-10/1.2",
         application: ["弧焊","装配","清洁","喷淋","取件","上下料","物料搬运","包装"],
@@ -95,7 +95,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb1600.jpg',
+        image: '/abb/IRB1600.jpg',
         brand: "ABB",
         model: "IRB1600-10/1.45",
         application: ["弧焊","装配","清洁","喷淋","取件", "切割", "上下料","物料搬运","包装"],
@@ -106,7 +106,7 @@ var robotsData = [
         precision: 0.02
     },
     {
-        image: '/abb/irb1600.jpg',
+        image: '/abb/IRB1600.jpg',
         brand: "ABB",
         model: "IRB1600-6/1.45",
         application: ["弧焊","装配","清洁","喷淋","切割","取件","上下料","物料搬运","包装"],
@@ -118,7 +118,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb1600ID.jpg',
+        image: '/abb/IRB1600ID.jpg',
         brand: "ABB",
         model: "IRB1600ID-4/1.5",
         application: ["弧焊"],
@@ -130,7 +130,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb2400.jpg',
+        image: '/abb/IRB2400.jpg',
         brand: "ABB",
         model: "IRB2400-12/1.55",
         application: ["切割","去毛刺","研磨","抛光"],
@@ -142,7 +142,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb2400.jpg',
+        image: '/abb/IRB2400.jpg',
         brand: "ABB",
         model: "IRB2400-20/1.55",
         application: ["切割","去毛刺","研磨","抛光"],
@@ -154,7 +154,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb2600.jpg',
+        image: '/abb/IRB2600.jpg',
         brand: "ABB",
         model: "IRB2600-12/1.65 ",
         application: ["孤焊","装配","切割","涂胶","上下料","物料搬运","测量"],
@@ -165,7 +165,7 @@ var robotsData = [
         precision: 0.04
     },
     {
-        image: '/abb/irb2600.jpg',
+        image: '/abb/IRB2600.jpg',
         brand: "ABB",
         model: "IRB2600-20/1.65 ",
         application: ["孤焊","装配","切割","涂胶","上下料","物料搬运","测量"],
@@ -177,7 +177,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb2600.jpg',
+        image: '/abb/IRB2600.jpg',
         brand: "ABB",
         model: "IRB2600-12/1.85 ",
         application: ["孤焊","装配","切割","涂胶","上下料","物料搬运","测量"],
@@ -189,7 +189,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb2600ID.jpg',
+        image: '/abb/IRB2600ID.jpg',
         brand: "ABB",
         model: "IRB2600ID-8/2.00 ",
         application: ["孤焊","涂胶","上下料","物料搬运"],
@@ -201,7 +201,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb2600.jpg',
+        image: '/abb/IRB2600.jpg',
         brand: "ABB",
         model: "IRB2600-15/1.85 ",
         application: ["孤焊","装配","切割","涂胶","上下料","物料搬运"],
@@ -213,7 +213,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb4400.jpg',
+        image: '/abb/IRB4400.jpg',
         brand: "ABB",
         model: "IRB4400-60/1.96",
         application: ["切割", "去毛刺", "涂胶", "密封", "研磨", "抛光"],
@@ -224,7 +224,7 @@ var robotsData = [
         precision: 0.19
     },
     {
-        image: '/abb/irb4400.jpg',
+        image: '/abb/IRB4400.jpg',
         brand: "ABB",
         model: "IRB4400-10/2.55",
         application: ["切割", "去毛刺", "模具喷淋", "涂胶", "密封", "研磨", "抛光","上下料","物料搬运"],
@@ -236,7 +236,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb4600.jpg',
+        image: '/abb/IRB4600.jpg',
         brand: "ABB",
         model: "IRB4600-20/2.50",
         application: ["弧焊", "装配", "涂胶", "激光焊接", "上下料", "物料搬运", "测量", "包装","码垛","弯板机上下料"],
@@ -248,7 +248,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb4600.jpg',
+        image: '/abb/IRB4600.jpg',
         brand: "ABB",
         model: "IRB4600-40/2.55",
         application: ["装配", "涂胶", "取件", "激光焊接", "上下料", "物料搬运", "测量", "包装","码垛"],
@@ -260,7 +260,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb4600.jpg',
+        image: '/abb/IRB4600.jpg',
         brand: "ABB",
         model: "IRB4600-45/2.05",
         application: ["装配", "去毛刺", "涂胶", "取件", "上下料", "物料搬运", "测量", "包装","码垛"],
@@ -272,7 +272,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb4600.jpg',
+        image: '/abb/IRB4600.jpg',
         brand: "ABB",
         model: "IRB4600-60/2.05",
         application: ["装配", "去毛刺", "涂胶", "取件", "上下料", "物料搬运", "测量", "包装","码垛"],
@@ -284,7 +284,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6620.jpg',
+        image: '/abb/IRB6620.jpg',
         brand: "ABB",
         model: "IRB6620-150/2.2",
         application: ["清洁", "喷淋", "上胶", "密封", "装配", "切割", "去毛刺", "上下料", "物料搬运", "包装", "码垛", "研磨", "抛光", "弯板机上下料", "点焊"],
@@ -296,7 +296,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6620LX.jpg',
+        image: '/abb/IRB6620LX.jpg',
         brand: "ABB",
         model: "IRB6620LX",
         application: ["上下料", "物料搬运", "动力包装"],
@@ -307,7 +307,7 @@ var robotsData = [
         precision: 0.05
     },
     {
-        image: '/abb/irb6640.jpg',
+        image: '/abb/IRB6640.jpg',
         brand: "ABB",
         model: "IRB6640-180/2.55",
         application: ["切割", "去毛刺", "研磨", "抛光", "上下料", "物料搬运", "点焊"],
@@ -319,7 +319,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6640.jpg',
+        image: '/abb/IRB6640.jpg',
         brand: "ABB",
         model: "IRB6640-235/2.55",
         application: ["切割", "去毛刺", "研磨", "抛光", "上下料", "物料搬运", "点焊"],
@@ -331,7 +331,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6640.jpg',
+        image: '/abb/IRB6640.jpg',
         brand: "ABB",
         model: "IRB6640-205/2.75",
         application: ["切割", "去毛刺", "研磨", "抛光", "上下料", "物料搬运", "点焊"],
@@ -342,7 +342,7 @@ var robotsData = [
         precision: 0.04
     },
     {
-        image: '/abb/irb6640.jpg',
+        image: '/abb/IRB6640.jpg',
         brand: "ABB",
         model: "IRB6640-185/2.8",
         application: ["切割", "去毛刺", "研磨", "抛光", "上下料", "物料搬运", "点焊"],
@@ -354,7 +354,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6640.jpg',
+        image: '/abb/IRB6640.jpg',
         brand: "ABB",
         model: "IRB6640-130/3.2",
         application: ["切割", "去毛刺", "研磨", "抛光", "上下料", "物料搬运", "点焊"],
@@ -366,7 +366,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6640.jpg',
+        image: '/abb/IRB6640.jpg',
         brand: "ABB",
         model: "IRB6640ID-200/2.55",
         application: ["切割", "去毛刺", "研磨", "抛光", "上下料", "物料搬运", "点焊"],
@@ -378,7 +378,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6640.jpg',
+        image: '/abb/IRB6640.jpg',
         brand: "ABB",
         model: "IRB6640-170/2.75",
         application: ["装配","切割", "去毛刺", "研磨", "抛光", "上下料", "物料搬运", "喷雾"],
@@ -390,7 +390,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6650S.jpg',
+        image: '/abb/IRB6650S.jpg',
         brand: "ABB",
         model: "IRB6650S -90/3.9",
         application: ["装配","切割","去毛刺", "研磨", "抛光", "上下料", "物料搬运", "喷雾"],
@@ -402,7 +402,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6650S.jpg',
+        image: '/abb/IRB6650S.jpg',
         brand: "ABB",
         model: "IRB6650S -125/3.5",
         application: ["装配","切割","去毛刺", "研磨", "抛光", "上下料", "物料搬运", "喷雾"],
@@ -414,7 +414,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6650S.jpg',
+        image: '/abb/IRB6650S.jpg',
         brand: "ABB",
         model: "IRB6650S -200/3.0",
         application: ["装配","切割","去毛刺", "研磨", "抛光", "上下料", "物料搬运", "喷雾"],
@@ -426,7 +426,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6660.jpg',
+        image: '/abb/IRB6660.jpg',
         brand: "ABB",
         model: "IRB6660 -100/3.3",
         application: ["物料搬运","上下料", "压机上下料"],
@@ -438,7 +438,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6660.jpg',
+        image: '/abb/IRB6660.jpg',
         brand: "ABB",
         model: "IRB6660 -130/3.1",
         application: ["物料搬运","上下料", "压机上下料"],
@@ -450,7 +450,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6660.jpg',
+        image: '/abb/IRB6660.jpg',
         brand: "ABB",
         model: "IRB6660 -205/1.9",
         application: ["切割","研磨", "机加工","铣削", "锯割"],
@@ -462,7 +462,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6700.jpg',
+        image: '/abb/IRB6700.jpg',
         brand: "ABB",
         model: "IRB6700-235/2.65",
         application: ["切割", "去毛刺", "研磨", "抛光", "上下料", "物料搬运", "点焊"],
@@ -474,7 +474,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6700.jpg',
+        image: '/abb/IRB6700.jpg',
         brand: "ABB",
         model: "IRB6700-205/2.80",
         application: ["切割", "去毛刺", "研磨", "抛光", "上下料", "物料搬运", "点焊"],
@@ -486,7 +486,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6700.jpg',
+        image: '/abb/IRB6700.jpg',
         brand: "ABB",
         model: "IRB6700-200/2.60",
         application: ["切割", "去毛刺", "研磨", "抛光", "上下料", "物料搬运", "点焊"],
@@ -498,7 +498,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6700.jpg',
+        image: '/abb/IRB6700.jpg',
         brand: "ABB",
         model: "IRB6700-175/3.05",
         application: ["切割", "去毛刺", "研磨", "抛光", "上下料", "物料搬运", "点焊"],
@@ -510,7 +510,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6700.jpg',
+        image: '/abb/IRB6700.jpg',
         brand: "ABB",
         model: "IRB6700-155/2.85",
         application: ["切割", "去毛刺", "研磨", "抛光", "上下料", "物料搬运", "点焊"],
@@ -522,7 +522,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb6700.jpg',
+        image: '/abb/IRB6700.jpg',
         brand: "ABB",
         model: "IRB6700-150/3.20",
         application: ["切割", "去毛刺", "研磨", "抛光", "上下料", "物料搬运", "点焊"],
@@ -534,7 +534,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb7600.jpg',
+        image: '/abb/IRB7600.jpg',
         brand: "ABB",
         model: "IRB7600-500/2.55",
         application: ["装配", "切割","去毛刺","研磨", "抛光","上下料", "物料搬运","弯板机上下料", "点焊"],
@@ -546,7 +546,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb7600.jpg',
+        image: '/abb/IRB7600.jpg',
         brand: "ABB",
         model: "IRB7600 -400/2.55",
         application: ["装配", "切割","去毛刺","研磨", "抛光","上下料", "物料搬运","弯板机上下料", "点焊"],
@@ -558,7 +558,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb7600.jpg',
+        image: '/abb/IRB7600.jpg',
         brand: "ABB",
         model: "IRB7600 -340/2.8",
         application: ["装配", "切割","去毛刺","研磨", "抛光","上下料", "物料搬运","弯板机上下料", "点焊"],
@@ -570,7 +570,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb7600.jpg',
+        image: '/abb/IRB7600.jpg',
         brand: "ABB",
         model: "IRB7600 -325/3.1",
         application: ["装配", "切割","去毛刺","研磨", "抛光","上下料", "物料搬运","弯板机上下料", "点焊"],
@@ -582,7 +582,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb7600-150/3.50.jpg',
+        image: '/abb/IRB7600-150/3.50.jpg',
         brand: "ABB",
         model: "IRB7600-150/3.50",
         application: ["装配", "切割","去毛刺","研磨", "抛光","上下料", "物料搬运","弯板机上下料"],
@@ -594,7 +594,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb260.jpg',
+        image: '/abb/IRB260.jpg',
         brand: "ABB",
         model: "IRB260",
         application: ["包装"],
@@ -606,7 +606,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb460.jpg',
+        image: '/abb/IRB460.jpg',
         brand: "ABB",
         model: "IRB460",
         application: ["拆垛", "物料搬运","码垛"],
@@ -618,7 +618,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb660.jpg',
+        image: '/abb/IRB660.jpg',
         brand: "ABB",
         model: "IRB660",
         application: ["物料搬运","码垛"],
@@ -630,7 +630,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb660.jpg',
+        image: '/abb/IRB660.jpg',
         brand: "ABB",
         model: "IRB660",
         application: ["物料搬运","码垛"],
@@ -642,7 +642,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb760.jpg',
+        image: '/abb/IRB760.jpg',
         brand: "ABB",
         model: "IRB760",
         application: ["拆垛", "整层码垛", "物料搬运","码垛"],
@@ -654,7 +654,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb360.jpg',
+        image: '/abb/IRB360.jpg',
         brand: "ABB",
         model: "IRB360-1/800",
         application: ["装配", "物料搬运","包装", "拾料"],
@@ -665,7 +665,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb360.jpg',
+        image: '/abb/IRB360.jpg',
         brand: "ABB",
         model: "IRB360 -1/1130",
         application: ["装配", "物料搬运","包装", "拾料"],
@@ -676,7 +676,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb360.jpg',
+        image: '/abb/IRB360.jpg',
         brand: "ABB",
         model: "IRB360-3/1130",
         application: ["装配", "物料搬运","包装", "拾料"],
@@ -687,7 +687,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb360.jpg',
+        image: '/abb/IRB360.jpg',
         brand: "ABB",
         model: "IRB360-8/1130",
         application: ["装配", "物料搬运","包装", "拾料"],
@@ -698,7 +698,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb360.jpg',
+        image: '/abb/IRB360.jpg',
         brand: "ABB",
         model: "IRB360-1/1600",
         application: ["装配", "物料搬运","包装", "拾料"],
@@ -709,7 +709,7 @@ var robotsData = [
     },
 
     {
-        image: '/abb/irb360.jpg',
+        image: '/abb/IRB360.jpg',
         brand: "ABB",
         model: "IRB360-6/1600",
         application: ["装配", "物料搬运","包装", "拾料"],
