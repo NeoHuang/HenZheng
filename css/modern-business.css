@@ -11,7 +11,7 @@ body {
     height: 100%;
     background-color: #1F3044;
     font-family: arial, sans-serif, Microsoft YaHei;
-    font-size: 13px;
+    font-size: 14px;
 
 }
 
@@ -232,6 +232,7 @@ h4 {
 
 .robot-img {
     width: 100px;
+    max-height: 130px;
     display: block;
 }
 
