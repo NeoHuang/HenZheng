@@ -392,7 +392,7 @@ var robotsData = [
     {
         image: '/abb/IRB6650S.jpg',
         brand: "ABB",
-        model: "IRB6650S -90/3.9",
+        model: "IRB6650S-90/3.9",
         application: ["装配","机加工", "打磨", "抛光", "上下料", "物料搬运", "喷淋"],
         load: 90,
         reach: 3.9,
@@ -404,7 +404,7 @@ var robotsData = [
     {
         image: '/abb/IRB6650S.jpg',
         brand: "ABB",
-        model: "IRB6650S -125/3.5",
+        model: "IRB6650S-125/3.5",
         application: ["装配","机加工", "打磨", "抛光", "上下料", "物料搬运", "喷淋"],
         load: 125,
         reach: 3.5,
@@ -416,7 +416,7 @@ var robotsData = [
     {
         image: '/abb/IRB6650S.jpg',
         brand: "ABB",
-        model: "IRB6650S -200/3.0",
+        model: "IRB6650S-200/3.0",
         application: ["装配","机加工", "打磨", "抛光", "上下料", "物料搬运", "喷淋"],
         load: 200,
         reach: 3.0,
@@ -428,7 +428,7 @@ var robotsData = [
     {
         image: '/abb/IRB6660.jpg',
         brand: "ABB",
-        model: "IRB6660 -100/3.3",
+        model: "IRB6660-100/3.3",
         application: ["物料搬运","上下料"],
         load: 100,
         reach: 3.3,
@@ -440,7 +440,7 @@ var robotsData = [
     {
         image: '/abb/IRB6660.jpg',
         brand: "ABB",
-        model: "IRB6660 -130/3.1",
+        model: "IRB6660-130/3.1",
         application: ["物料搬运","上下料"],
         load: 130,
         reach: 3.1,
@@ -452,7 +452,7 @@ var robotsData = [
     {
         image: '/abb/IRB6660.jpg',
         brand: "ABB",
-        model: "IRB6660 -205/1.9",
+        model: "IRB6660-205/1.9",
         application: ["打磨","机加工"],
         load: 205,
         reach: 1.9,
@@ -667,7 +667,7 @@ var robotsData = [
     {
         image: '/abb/IRB360.jpg',
         brand: "ABB",
-        model: "IRB360 -1/1130",
+        model: "IRB360-1/1130",
         application: ["装配", "物料搬运","包装", "上下料"],
         load: 1,
         reach: 1.130,

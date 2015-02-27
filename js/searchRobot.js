@@ -60,7 +60,7 @@ robotsApp.filter('robotFilter', function()
                     }
                 }
                 if (!contains){
-                    console.log(selectedAppOptions[j]);
+                   // console.log(selectedAppOptions[j]);
                     continue;
                 }
             }
@@ -96,7 +96,7 @@ robotsApp.filter('robotFilter', function()
 
             filteredRobots.push(robots[i]);
         }
-        console.log(filteredRobots);
+      //  console.log(filteredRobots);
         return filteredRobots;
     }
 });
