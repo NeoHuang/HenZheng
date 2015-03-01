@@ -325,3 +325,7 @@ h4 {
 .sys-head {
     font-size: 20px;
 }
+
+.about-card {
+    height:100px;
+}
