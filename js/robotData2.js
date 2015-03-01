@@ -732,7 +732,7 @@ var robotsData = [
     },
 
     {
-	image: '/abb/IRB58.jpg',
+	image: '/abb/IRB580.jpg',
         brand: "ABB",
         model: "IRB58",
         application: ["喷涂"],
