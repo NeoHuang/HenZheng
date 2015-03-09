@@ -340,8 +340,7 @@ h4 {
     color:#0070c0;
 }
 .hide-email {
-    position: absolute;
-top: 20px;
 width: 100px;
 height: 20px;
+    float:right;
 }
