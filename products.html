@@ -19,7 +19,7 @@
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!--
-<link rel="canonical" href="http://megagear.cn/contact.html">
+<link rel="canonical" href="http://megagear.cn/products.html">
 <link rel="alternate" type="application/atom+xml" title="北京恒正精机科技有限责任公司" href="http://megagear.cn/feed.xml" />
 -->
     <style type="text/css">
@@ -167,160 +167,95 @@
 
 
 
-        <div>
-     <div class="row">
-            <!-- Map Column -->
-            <div class="col-md-8" >
-                <!-- Embedded Google Map -->
-<!--                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>-->
-                <div id="dituContent" style="height:550px;border:#ccc solid 1px; ">
-                </div>     
-               
+        <script src="js/angular.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
+<script src="js/robotData2.js"></script>
+<script src="js/searchRobot.js"></script>
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="page-header" style="margin-top:10px">机器人选型指南</h2>    
+    </div>
+</div>
+<div ng-app="robotsApp" style="margin-left:10px; margin-right:10px;">
+    <div ng-controller="searchRobotCtrl">
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label >品牌</label>
+                <div class="btn-group">
+                    <label class="btn btn-default " ng-repeat="brand in search.brands" ng-model="brand.selected" btn-checkbox>{(brand.name)}</label>
+                </div>
             </div>
-            <!-- Contact Details Column -->
-            <div class="col-md-4">
-                <h3>北京总部</h3>
-                <p>
-                    北京市中关村东路8号东升大厦C座115室<br>
-                </p>
-                <p><i class="fa fa-phone"></i> 
-                    <abbr title="Phone">电话</abbr>: 010-5296 2209</p>
-                <p><i class="fa fa-envelope-o"></i> 
-                    <abbr title="Email">Email</abbr>: <a href="mailto:admin@megagear.cn">admin@megagear.cn</a>
-                </p>
-                <p style="margin-bottom:50px"><i class="fa fa-clock-o"></i> 
-                    <abbr title="Hours">办公时间</abbr>: 周一 - 周五: 9:00 AM - 5:00 PM</p>
-                <p></p>
-                <h3>上海分部</h3>
-                
-                <p>
-                    上海市浦东张江高科碧波路518号309室<br>
-                </p>
-                <p><i class="fa fa-phone"></i> 
-                    <abbr title="Phone">电话</abbr>: 021-5847 9676</p>
-                <p><i class="fa fa-envelope-o"></i> 
-                    <abbr title="Email">Email</abbr>: <a href="mailto:admin@megagear.cn">admin@megagear.cn</a>
-                </p>
-                <p><i class="fa fa-clock-o"></i> 
-                    <abbr title="Hours">办公时间</abbr>: 周一 - 周五: 9:00 AM - 5:00 PM</p>
+            <div class="form-group">
+                <div class="vsplitter">
+                </div>
+            </div>
+            <div class="form-group">                     
+                <label >荷重 &ge;</label>
+                <input class="form-control smallTxt" ng-model="search.load">
+                <label >kg</label>    
+            </div>
+            <div class="form-group">
+                <div class="vsplitter">
+                </div>
+            </div>
+            <div class="form-group">                     
+                <label >工作范围 &ge;</label>
+                <input class="form-control smallTxt" ng-model="search.reach">
+                <label >m</label>    
+            </div>
+             <div class="form-group">
+                <div class="vsplitter">
+                </div>
+            </div>
+            <div class="form-group">                     
+                <label >重复定位精度 &le;</label>
+                <input class="form-control smallTxt" ng-model="search.precision">
+                <label >mm</label>    
+            </div>
+            
+        </form>
+        <br>
+         <form class="form-inline" role="form">
+            <div class="form-group">
+                <label>应用范围</label>
+                <div class="btn-group">
+                    <label class="btn btn-default vspacer" ng-repeat="app in search.appOptions" ng-model="app.selected" btn-checkbox>{(app.name)}</label>
+                </div>
+            </div>
+           
+        </form>
 <!--
-                <ul class="list-unstyled list-inline list-social-icons">
-                    <li>
-                        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                    </li>
-                </ul>
+        <form>
+            <button type="button" class="btn btn-success">搜索</button>
+        </form>
 -->
+        <div class="spacer">
+        </div>
+        <div class="row">
+            <div ng-repeat="robot in robots | robotFilter:search" class="animate col-lg-6 col-md-6 col-sm-12 robot-card-container " >
+                <div class="robot-card">
+                    <div style="float:left; height:130px">
+                        <img src="image/robots{(robot.image)}" class="robot-img" >
+                    </div>
+
+                    <div class="relative">
+                        <div style="float:left; margin-right:20px;"><span class="bold">品牌：</span>{(robot.brand)}</div>
+                        <div ><span class="bold">型号：</span> {(robot.model)}</div>
+
+                        <div><span class="bold">荷重：</span>{(robot.load)}kg</div>
+                        <div><span class="bold">工作范围：</span>{(robot.reach)}m</div>
+                        <div><span class="bold">重复定位精度(RP)：</span>{(robot.precision)}mm</div>
+                        <div><span class="bold">主要应用：</span>{(robot.applicationFull)}</div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
-</div>
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
-<script type="text/javascript">
-    //创建和初始化地图函数：
-    function initMap(){
-        createMap();//创建地图
-        setMapEvent();//设置地图事件
-        addMapControl();//向地图添加控件
-        addMarker();//向地图中添加marker
-    }
-    
-    //创建地图函数：
-    function createMap(){
-        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(116.3401,39.999717);//定义一个中心点坐标
-        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
-        window.map = map;//将map变量存储在全局
-    }
-    
-    //地图事件设置函数：
-    function setMapEvent(){
-        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
-        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
-        map.enableKeyboard();//启用键盘上下左右键移动地图
-    }
-    
-    //地图控件添加函数：
-    function addMapControl(){
-        //向地图中添加缩放控件
-	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-	map.addControl(ctrl_nav);
-        //向地图中添加缩略图控件
-	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
-	map.addControl(ctrl_ove);
-        //向地图中添加比例尺控件
-	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-	map.addControl(ctrl_sca);
-    }
-    
-    //标注点数组
-    var markerArr = [{title:"恒正精机",content:"北京市中关村东路8号东升大厦C座115室",point:"116.340127|39.999772",isOpen:0,icon:{w:23,h:25,l:23,t:21,x:9,lb:12}}
-		 ];
-    //创建marker
-    function addMarker(){
-        for(var i=0;i<markerArr.length;i++){
-            var json = markerArr[i];
-            var p0 = json.point.split("|")[0];
-            var p1 = json.point.split("|")[1];
-            var point = new BMap.Point(p0,p1);
-			var iconImg = createIcon(json.icon);
-            var marker = new BMap.Marker(point,{icon:iconImg});
-			var iw = createInfoWindow(i);
-			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
-			marker.setLabel(label);
-            map.addOverlay(marker);
-            label.setStyle({
-                        borderColor:"#808080",
-                        color:"#333",
-                        cursor:"pointer"
-            });
-			
-			(function(){
-				var index = i;
-				var _iw = createInfoWindow(i);
-				var _marker = marker;
-				_marker.addEventListener("click",function(){
-				    this.openInfoWindow(_iw);
-			    });
-			    _iw.addEventListener("open",function(){
-				    _marker.getLabel().hide();
-			    })
-			    _iw.addEventListener("close",function(){
-				    _marker.getLabel().show();
-			    })
-				label.addEventListener("click",function(){
-				    _marker.openInfoWindow(_iw);
-			    })
-				if(!!json.isOpen){
-					label.hide();
-					_marker.openInfoWindow(_iw);
-				}
-			})()
-        }
-    }
-    //创建InfoWindow
-    function createInfoWindow(i){
-        var json = markerArr[i];
-        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
-        return iw;
-    }
-    //创建一个Icon
-    function createIcon(json){
-        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
-        return icon;
-    }
-    
-    initMap();//创建和初始化地图
-</script>
 
+    </div>
+</div>
 
 
         <footer class="site-footer">

@@ -19,7 +19,7 @@
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!--
-<link rel="canonical" href="http://megagear.cn/contact.html">
+<link rel="canonical" href="http://megagear.cn/career.html">
 <link rel="alternate" type="application/atom+xml" title="北京恒正精机科技有限责任公司" href="http://megagear.cn/feed.xml" />
 -->
     <style type="text/css">
@@ -167,160 +167,38 @@
 
 
 
-        <div>
-     <div class="row">
-            <!-- Map Column -->
-            <div class="col-md-8" >
-                <!-- Embedded Google Map -->
-<!--                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>-->
-                <div id="dituContent" style="height:550px;border:#ccc solid 1px; ">
-                </div>     
-               
-            </div>
-            <!-- Contact Details Column -->
-            <div class="col-md-4">
-                <h3>北京总部</h3>
-                <p>
-                    北京市中关村东路8号东升大厦C座115室<br>
-                </p>
-                <p><i class="fa fa-phone"></i> 
-                    <abbr title="Phone">电话</abbr>: 010-5296 2209</p>
-                <p><i class="fa fa-envelope-o"></i> 
-                    <abbr title="Email">Email</abbr>: <a href="mailto:admin@megagear.cn">admin@megagear.cn</a>
-                </p>
-                <p style="margin-bottom:50px"><i class="fa fa-clock-o"></i> 
-                    <abbr title="Hours">办公时间</abbr>: 周一 - 周五: 9:00 AM - 5:00 PM</p>
-                <p></p>
-                <h3>上海分部</h3>
-                
-                <p>
-                    上海市浦东张江高科碧波路518号309室<br>
-                </p>
-                <p><i class="fa fa-phone"></i> 
-                    <abbr title="Phone">电话</abbr>: 021-5847 9676</p>
-                <p><i class="fa fa-envelope-o"></i> 
-                    <abbr title="Email">Email</abbr>: <a href="mailto:admin@megagear.cn">admin@megagear.cn</a>
-                </p>
-                <p><i class="fa fa-clock-o"></i> 
-                    <abbr title="Hours">办公时间</abbr>: 周一 - 周五: 9:00 AM - 5:00 PM</p>
-<!--
-                <ul class="list-unstyled list-inline list-social-icons">
-                    <li>
-                        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                    </li>
-                </ul>
--->
-            </div>
-        </div>
-</div>
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
-<script type="text/javascript">
-    //创建和初始化地图函数：
-    function initMap(){
-        createMap();//创建地图
-        setMapEvent();//设置地图事件
-        addMapControl();//向地图添加控件
-        addMarker();//向地图中添加marker
-    }
-    
-    //创建地图函数：
-    function createMap(){
-        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(116.3401,39.999717);//定义一个中心点坐标
-        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
-        window.map = map;//将map变量存储在全局
-    }
-    
-    //地图事件设置函数：
-    function setMapEvent(){
-        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
-        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
-        map.enableKeyboard();//启用键盘上下左右键移动地图
-    }
-    
-    //地图控件添加函数：
-    function addMapControl(){
-        //向地图中添加缩放控件
-	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-	map.addControl(ctrl_nav);
-        //向地图中添加缩略图控件
-	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
-	map.addControl(ctrl_ove);
-        //向地图中添加比例尺控件
-	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-	map.addControl(ctrl_sca);
-    }
-    
-    //标注点数组
-    var markerArr = [{title:"恒正精机",content:"北京市中关村东路8号东升大厦C座115室",point:"116.340127|39.999772",isOpen:0,icon:{w:23,h:25,l:23,t:21,x:9,lb:12}}
-		 ];
-    //创建marker
-    function addMarker(){
-        for(var i=0;i<markerArr.length;i++){
-            var json = markerArr[i];
-            var p0 = json.point.split("|")[0];
-            var p1 = json.point.split("|")[1];
-            var point = new BMap.Point(p0,p1);
-			var iconImg = createIcon(json.icon);
-            var marker = new BMap.Marker(point,{icon:iconImg});
-			var iw = createInfoWindow(i);
-			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
-			marker.setLabel(label);
-            map.addOverlay(marker);
-            label.setStyle({
-                        borderColor:"#808080",
-                        color:"#333",
-                        cursor:"pointer"
-            });
-			
-			(function(){
-				var index = i;
-				var _iw = createInfoWindow(i);
-				var _marker = marker;
-				_marker.addEventListener("click",function(){
-				    this.openInfoWindow(_iw);
-			    });
-			    _iw.addEventListener("open",function(){
-				    _marker.getLabel().hide();
-			    })
-			    _iw.addEventListener("close",function(){
-				    _marker.getLabel().show();
-			    })
-				label.addEventListener("click",function(){
-				    _marker.openInfoWindow(_iw);
-			    })
-				if(!!json.isOpen){
-					label.hide();
-					_marker.openInfoWindow(_iw);
-				}
-			})()
-        }
-    }
-    //创建InfoWindow
-    function createInfoWindow(i){
-        var json = markerArr[i];
-        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
-        return iw;
-    }
-    //创建一个Icon
-    function createIcon(json){
-        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
-        return icon;
-    }
-    
-    initMap();//创建和初始化地图
-</script>
+        <p>由于公司业务的不断发展，恒正精机急需有素质、有能力、勇于挑战自我的有志之士加入我们的团队，一起奋斗中成长。恒正精机致力于为员工提供良好的职业前景和就业环境。我们既珍惜和鼓励每位员工的多样性、观点和想法、洞察力和创造性，以及他们在工作中所创造的价值，也强调团队互相帮助、互相配合的合作精神。恒正精机热诚欢迎您的加入！有意者将简历E-mail至admin@megagear.cn</p>
 
+<h3>工业机器人集成设备/非标设备销售工程师</h3>
+
+<ul>
+    <li>工作经验：2-3年</li>
+    <li>工作性质：全职</li>
+    <li>职位类别：销售工程师</li>
+    <li>工作地点：上海</li>
+    <li>招聘人数：2</li>
+</ul>
+<h4>岗位职责：</h4>
+<ul>
+    <li class="border-list">负责以上海为中心的南方区域工业机器人集成设备/非标设备产品销售，并达到每年的销售指标</li>
+    <li class="border-list">根据公司年度总体目标，做好销售预测，制定销售计划并组织实施，完成既定目标</li>
+    <li class="border-list">负责所辖区域内的业务拓展、商务谈判、合同签定等具体销售工作。协调维护好所辖区域的客户关系</li>
+    <li class="border-list">寻找新客户，开发目标市场并日常维护客户关系等</li>
+    <li class="border-list">掌握区域市场动态，负责组织收集所辖区域相关行业政策、竞争对手信息、客户信息等，分析市场发展趋势并提出解决方案。</li>
+    <li class="border-list">建设并培育销售队伍，提高销售人员业绩达标率。按公司统一要求考核、选拔业务人员，充实、壮大销售团队。</li>
+    <li class="border-list">及时反馈产品质量信息，协助解决质量事故。与客户保持紧密联系，组织市场调研，并及时将结果反馈给相关部门，提出产品开发、改进建议。促进新产品、新技术立项。</li>
+</ul>
+
+<h4>任职要求：</h4>
+<ul>
+    <li class="border-list">具有国家认可的大专或以上学历，职业经历和业绩特别优异者可适当放宽，工业自动化、机电专业优先考虑。</li>
+    <li class="border-list">具备1年以上独立开发客户工作经验，机床加工、涂装、工业自动化或者机电设备行业优先考虑。</li>
+    <li class="border-list">热爱销售工作、能吃苦耐劳、敬业、为人正直，性格开朗、沟通能力强。</li>
+    <li class="border-list">可以长时间出差，较强的学习和适应能力以及良好的沟通能力。</li>
+    <li class="border-list">具有很强的敬业精神以及高度的责任心，具有创新精神，愿意尝试挑战性工作。</li>
+    <li class="border-list">待遇＝底薪 + 提成（试用期一般为三个月，试情况而定）</li>
+    <li class="border-list">愿意服从公司在全国范围内的调配，成为全国各销售办事处的负责人。</li>
+</ul>
 
 
         <footer class="site-footer">

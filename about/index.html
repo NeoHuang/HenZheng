@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta name="baidu-site-verification" content="FWqtjykbnm" />
-    <title>北京恒正精机科技有限责任公司</title>
+    <title>About</title>
     <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
@@ -19,7 +19,7 @@
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!--
-<link rel="canonical" href="http://megagear.cn/contact.html">
+<link rel="canonical" href="http://megagear.cn/about/">
 <link rel="alternate" type="application/atom+xml" title="北京恒正精机科技有限责任公司" href="http://megagear.cn/feed.xml" />
 -->
     <style type="text/css">
@@ -167,159 +167,22 @@
 
 
 
-        <div>
-     <div class="row">
-            <!-- Map Column -->
-            <div class="col-md-8" >
-                <!-- Embedded Google Map -->
-<!--                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>-->
-                <div id="dituContent" style="height:550px;border:#ccc solid 1px; ">
-                </div>     
-               
-            </div>
-            <!-- Contact Details Column -->
-            <div class="col-md-4">
-                <h3>北京总部</h3>
-                <p>
-                    北京市中关村东路8号东升大厦C座115室<br>
-                </p>
-                <p><i class="fa fa-phone"></i> 
-                    <abbr title="Phone">电话</abbr>: 010-5296 2209</p>
-                <p><i class="fa fa-envelope-o"></i> 
-                    <abbr title="Email">Email</abbr>: <a href="mailto:admin@megagear.cn">admin@megagear.cn</a>
-                </p>
-                <p style="margin-bottom:50px"><i class="fa fa-clock-o"></i> 
-                    <abbr title="Hours">办公时间</abbr>: 周一 - 周五: 9:00 AM - 5:00 PM</p>
-                <p></p>
-                <h3>上海分部</h3>
-                
-                <p>
-                    上海市浦东张江高科碧波路518号309室<br>
-                </p>
-                <p><i class="fa fa-phone"></i> 
-                    <abbr title="Phone">电话</abbr>: 021-5847 9676</p>
-                <p><i class="fa fa-envelope-o"></i> 
-                    <abbr title="Email">Email</abbr>: <a href="mailto:admin@megagear.cn">admin@megagear.cn</a>
-                </p>
-                <p><i class="fa fa-clock-o"></i> 
-                    <abbr title="Hours">办公时间</abbr>: 周一 - 周五: 9:00 AM - 5:00 PM</p>
-<!--
-                <ul class="list-unstyled list-inline list-social-icons">
-                    <li>
-                        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                    </li>
-                </ul>
--->
-            </div>
-        </div>
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">About</h1>
+  </header>
+
+  <article class="post-content">
+    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="http://jekyllrb.com/">jekyllrb.com</a></p>
+
+<p>You can find the source code for the Jekyll new theme at: <a href="https://github.com/jglovier/jekyll-new">github.com/jglovier/jekyll-new</a></p>
+
+<p>You can find the source code for Jekyll at <a href="https://github.com/jekyll/jekyll">github.com/jekyll/jekyll</a></p>
+
+  </article>
+
 </div>
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
-<script type="text/javascript">
-    //创建和初始化地图函数：
-    function initMap(){
-        createMap();//创建地图
-        setMapEvent();//设置地图事件
-        addMapControl();//向地图添加控件
-        addMarker();//向地图中添加marker
-    }
-    
-    //创建地图函数：
-    function createMap(){
-        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(116.3401,39.999717);//定义一个中心点坐标
-        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
-        window.map = map;//将map变量存储在全局
-    }
-    
-    //地图事件设置函数：
-    function setMapEvent(){
-        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
-        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
-        map.enableKeyboard();//启用键盘上下左右键移动地图
-    }
-    
-    //地图控件添加函数：
-    function addMapControl(){
-        //向地图中添加缩放控件
-	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-	map.addControl(ctrl_nav);
-        //向地图中添加缩略图控件
-	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
-	map.addControl(ctrl_ove);
-        //向地图中添加比例尺控件
-	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-	map.addControl(ctrl_sca);
-    }
-    
-    //标注点数组
-    var markerArr = [{title:"恒正精机",content:"北京市中关村东路8号东升大厦C座115室",point:"116.340127|39.999772",isOpen:0,icon:{w:23,h:25,l:23,t:21,x:9,lb:12}}
-		 ];
-    //创建marker
-    function addMarker(){
-        for(var i=0;i<markerArr.length;i++){
-            var json = markerArr[i];
-            var p0 = json.point.split("|")[0];
-            var p1 = json.point.split("|")[1];
-            var point = new BMap.Point(p0,p1);
-			var iconImg = createIcon(json.icon);
-            var marker = new BMap.Marker(point,{icon:iconImg});
-			var iw = createInfoWindow(i);
-			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
-			marker.setLabel(label);
-            map.addOverlay(marker);
-            label.setStyle({
-                        borderColor:"#808080",
-                        color:"#333",
-                        cursor:"pointer"
-            });
-			
-			(function(){
-				var index = i;
-				var _iw = createInfoWindow(i);
-				var _marker = marker;
-				_marker.addEventListener("click",function(){
-				    this.openInfoWindow(_iw);
-			    });
-			    _iw.addEventListener("open",function(){
-				    _marker.getLabel().hide();
-			    })
-			    _iw.addEventListener("close",function(){
-				    _marker.getLabel().show();
-			    })
-				label.addEventListener("click",function(){
-				    _marker.openInfoWindow(_iw);
-			    })
-				if(!!json.isOpen){
-					label.hide();
-					_marker.openInfoWindow(_iw);
-				}
-			})()
-        }
-    }
-    //创建InfoWindow
-    function createInfoWindow(i){
-        var json = markerArr[i];
-        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
-        return iw;
-    }
-    //创建一个Icon
-    function createIcon(json){
-        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
-        return icon;
-    }
-    
-    initMap();//创建和初始化地图
-</script>
 
 
 
