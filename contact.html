@@ -16,10 +16,10 @@ layout: default
             <div class="col-md-4">
                 <h3>北京总部</h3>
                 <p>
-                    北京市中关村东路8号东升大厦C座115室<br>
+                    北京市海淀区北清路103号超然时代研发中心2号楼1层1-3区<br>
                 </p>
                 <p><i class="fa fa-phone"></i> 
-                    <abbr title="Phone">电话</abbr>: 010-5296 2209</p>
+                    <abbr title="Phone">电话</abbr>: 010-8249 1857</p>
                 <p><i class="fa fa-envelope-o"></i> 
                     <abbr title="Email">Email</abbr>: <a href="mailto:admin@megagear.cn">admin@megagear.cn</a>
                 </p>
@@ -70,7 +70,7 @@ layout: default
     //创建地图函数：
     function createMap(){
         var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(116.3401,39.999717);//定义一个中心点坐标
+        var point = new BMap.Point(116.244973,40.079075);//定义一个中心点坐标
         map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
         window.map = map;//将map变量存储在全局
     }
@@ -97,7 +97,7 @@ layout: default
     }
     
     //标注点数组
-    var markerArr = [{title:"恒正精机",content:"北京市中关村东路8号东升大厦C座115室",point:"116.340127|39.999772",isOpen:0,icon:{w:23,h:25,l:23,t:21,x:9,lb:12}}
+    var markerArr = [{title:"恒正精机",content:"北京市海淀区北清路103号超然时代研发中心2号楼1层1-3区",point:"116.244973| 40.079075",isOpen:0,icon:{w:23,h:25,l:23,t:21,x:9,lb:12}}
 		 ];
     //创建marker
     function addMarker(){
